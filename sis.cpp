@@ -189,7 +189,7 @@ void make_new_student(Student* all_students[], int* pnum_students)
     cout << "Reached maximum number of courses. ";
     cout << "Cannot create a new course at this time.\n" << endl;
     return;
-
+ 
   }  
 }
 
@@ -214,6 +214,9 @@ void add_student_to_course(Course* all_courses[], int num_courses, Student* all_
  */
 void print_roster(Course* all_courses[], int num_courses)
 {
+  string course;
+  cout << "Input a course name." << endl;
+  cin >> course;
   // STUB: You must complete this function.
 }
 
