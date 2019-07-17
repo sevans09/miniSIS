@@ -189,8 +189,16 @@ void make_new_student(Student* all_students[], int* pnum_students)
     cout << "Reached maximum number of courses. ";
     cout << "Cannot create a new course at this time.\n" << endl;
     return;
- 
   }  
+  string student_name;
+  cout << "Please enter the name of the new student: ";
+  getline(cin, student_name);
+  cout << endl;
+  
+  Student* s = new Student;
+  s->name = student_name;
+  s->num_courses = 0;
+  
 }
 
 /*
